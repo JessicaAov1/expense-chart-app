@@ -1,0 +1,20 @@
+:root {
+  --clr-primary-Soft-red: hsl(10, 79%, 65%);
+  --clr-primary-Cyan: hsl(186, 34%, 60%);
+  --clr-Dark-brown: hsl(25, 47%, 15%);
+  --clr-Medium-brown: hsl(28, 10%, 53%);
+  --clr-Cream: hsl(27, 66%, 92%);
+  --clr-Very-pale-orange: hsl(33, 100%, 98%);
+  --transition: all 0.5s linear;
+  --spacing: 0.25rem;
+  --radius: 0.5rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+}
