@@ -17,4 +17,57 @@
 body {
   font-family: "Manrope", sans-serif;
   font-size: 18px;
+  background: var(--clr-Cream);
+  padding: 5rem 2rem;
+}
+.app-container {
+  display: grid;
+  justify-content: space-evenly;
+}
+card {
+  width: 80vw;
+  border-radius: var(--radius);
+  display: grid;
+  grid-template-rows: 5px 1fr 1fr;
+  grid-row-gap: 1rem;
+  margin: 0 auto;
+}
+.balance {
+  background: var(--clr-primary-Soft-red);
+  color: var(--clr-Cream);
+  padding: 1rem 1rem 0 1rem;
+}
+.balance-title {
+  font-weight: 600;
+  font-size: 14px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+.available-amount,
+.amount-spent,
+.evolution {
+  font-weight: 800;
+}
+.spending {
+  display: grid;
+  grid-template-rows: 1fr 200px 50px 50px;
+  align-content: center;
+  background: var(--clr-Very-pale-orange);
+  color: var(--clr-Dark-brown);
+  margin-top: 1rem;
+  padding: 1rem;
+}
+.card-title {
+  font-weight: bolder;
+  text-align: center;
+}
+
+.total-spent {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+.total-spent,
+.timeframe {
+  color: var(--clr-Medium-brown);
+  font-size: 14px;
 }

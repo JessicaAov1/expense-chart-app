@@ -34,8 +34,10 @@
   <body>
     <div class="app-container">
       <card class="balance">
-        My balance $921.48
-        <img src="./images/logo.svg" alt="logo" />
+        <span class="balance-title">
+          My balance <img src="./images/logo.svg" alt="logo"
+        /></span>
+        <div class="available-amount">$921.48</div>
       </card>
       <card class="spending">
         <div class="card-title">Spending - Last 7 days</div>
@@ -47,14 +49,14 @@
             style="border: 1px solid #c3c3c3"
           >
           </canvas
-          >mon<canvas
+          ><canvas
             id="myCanvasTues"
             width="20"
             height="100"
             style="border: 1px solid #c3c3c3"
           >
           </canvas>
-          tue
+        
           <canvas
             id="myCanvasWed"
             width="20"
@@ -62,7 +64,7 @@
             style="border: 1px solid #c3c3c3"
           >
           </canvas
-          >wed
+          >
           <canvas
             id="myCanvasThu"
             width="20"
@@ -70,7 +72,7 @@
             style="border: 1px solid #c3c3c3"
           >
           </canvas
-          >thu
+          >
           <canvas
             id="myCanvasFri"
             width="20"
@@ -78,7 +80,7 @@
             style="border: 1px solid #c3c3c3"
           >
           </canvas
-          >fri
+          >
           <canvas
             id="myCanvasSat"
             width="20"
@@ -86,7 +88,7 @@
             style="border: 1px solid #c3c3c3"
           >
           </canvas
-          >sat
+          >
           <canvas
             id="myCanvasSun"
             width="20"
@@ -94,11 +96,16 @@
             style="border: 1px solid #c3c3c3"
           >
           </canvas
-          >sun
+          >
         </div>
-        <div class="total-spent">
-          Total this month $478.33 +2.4% from last month
-        </div>
+
+        <span class="total-spent">
+          Total this month
+          <span class="evolution">+2.4%</span>
+           <span class="amount-spent">$478.33</span>
+          <span class="timeframe">from last month</span>
+       
+       
       </card>
     </div>
     <footer>
