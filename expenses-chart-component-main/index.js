@@ -45,18 +45,5 @@ async function getData() {
     .getElementById("myCanvas")
     .setAttribute("style", "display:block;width:300px;");
   document.getElementById("myCanvas").style.width = "300px";
-  const canvas = document.getElementById("myCanvas");
-  canvas.addEventListener(
-    "mouseenter",
-    (event) => {
-      // highlight the mouseenter target
-      event.target.style.color = "purple";
-
-      // reset the color after a short delay
-      setTimeout(() => {
-        event.target.style.color = "";
-      }, 500);
-    },
-    false
-  );
+  
 }
