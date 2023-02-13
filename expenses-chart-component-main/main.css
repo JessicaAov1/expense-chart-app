@@ -18,14 +18,18 @@ body {
   font-family: "Manrope", sans-serif;
   font-size: 18px;
   background: var(--clr-Cream);
-  padding: 5rem 2rem;
 }
 .app-container {
-  display: grid;
-  justify-content: space-evenly;
+  width: 100vw;
+  padding: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .app-container {
+    max-width: 30vw;
+    margin: 0 auto;
+  }
 }
 card {
-  width: 80vw;
   border-radius: var(--radius);
   display: grid;
   grid-template-rows: 5px 1fr 1fr;
@@ -34,11 +38,12 @@ card {
 }
 .balance {
   background: var(--clr-primary-Soft-red);
-  color: var(--clr-Cream);
+  color: white;
   padding: 1rem 1rem 0 1rem;
+  max-width: 80vw;
 }
 .balance-title {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 14px;
   display: grid;
   grid-template-columns: 3fr 1fr;
@@ -46,12 +51,21 @@ card {
 .available-amount,
 .amount-spent,
 .evolution {
-  font-weight: 800;
+  font-weight: bolder;
+}
+.amount-spent,
+.evolution {
+  color: var(--clr-Dark-brown);
+}
+.amount-spent {
+  font-size: 26px;
 }
 .spending {
+  max-width: 80vw;
   display: grid;
-  grid-template-rows: 1fr 200px 50px 50px;
+  grid-template-rows: 1fr 200px 50px 10px;
   align-content: center;
+  align-items: center;
   background: var(--clr-Very-pale-orange);
   color: var(--clr-Dark-brown);
   margin-top: 1rem;
@@ -60,6 +74,11 @@ card {
 .card-title {
   font-weight: bolder;
   text-align: center;
+}
+.days {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 40px);
+  justify-content: center;
 }
 
 .total-spent {
