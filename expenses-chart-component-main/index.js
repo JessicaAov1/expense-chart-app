@@ -1,3 +1,6 @@
+fetch("./data.json")
+  .then((response) => response.json())
+  .then((data) => console.log(data));
 getData();
 async function getData() {
   const response = await fetch(`./data.json`);
